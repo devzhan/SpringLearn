@@ -8,5 +8,10 @@
    <bean id="helloWorld" class="com.sekorm.model.HelloWorld" scope="prototype">
        <property name="message" value="Hello World!"/>
    </bean>
+   
+    <bean id="helloWorld2" class="com.sekorm.model.HelloWorld2" init-method="init" destroy-method="destroy">
+       <property name="message" value="Hello World!"/>
+   </bean>
 
+<bean class="com.sekorm.model.InitHelloWorld" />
 </beans>
