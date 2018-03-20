@@ -3,6 +3,7 @@ package com.sekorm;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.sekorm.model.JavaCollection;
 import com.sekorm.model.TextEditor;
 import com.sekorm.model.TextEditor2;
 
@@ -16,7 +17,11 @@ public class MainApp {
 
 		TextEditor2 textEditor = (TextEditor2) context.getBean("textEditor2");
 		textEditor.spellCheck();
-
+		JavaCollection jc = (JavaCollection) context.getBean("javaCollection");
+		jc.getAddressList();
+		jc.getAddressSet();
+		jc.getAddressMap();
+		jc.getAddressProp();
 	}
 
 }
