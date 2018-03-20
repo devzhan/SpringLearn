@@ -7,4 +7,5 @@ Constructor-based dependency injection
 ##当容器调用带有多个参数的构造函数类时，实现基于构造函数的 DI，每个代表在其他类中的一个依赖关系。
 Setter-based dependency injection
 ##基于 setter 方法的 DI 是通过在调用无参数的构造函数或无参数的静态工厂方法实例化 bean 之后容器调用 beans 的 setter 方法来实现的。
-## 集合注入
+#集合注入
+## learn3 自动装配
